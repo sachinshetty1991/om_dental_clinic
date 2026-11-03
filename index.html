@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-bind="name">OM Dental Clinic</title>
+  <meta name="description" content="Gentle, modern dental care in Balkum, Thane. Root canals, implants, braces, whitening and kids' dentistry. Book your visit today.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">🦷 <span data-bind="name">OM Dental Clinic</span></a>
+      <nav class="site-nav">
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" data-bind="waHref" href="#" target="_blank" rel="noopener">Book on WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 data-bind="name">OM Dental Clinic</h1>
+          <p class="tagline" data-bind="tagline">Gentle, modern dental care in Balkum, Thane</p>
+          <p class="hero-sub">Balkum, Thane</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-bind="waHref" href="#" target="_blank" rel="noopener">Book on WhatsApp</a>
+            <a class="btn btn-ghost" data-bind="phoneHref" href="#">Call now</a>
+          </div>
+        </div>
+        <img class="hero-img" src="images/placeholder.svg" alt="Inside our clinic">
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="grid" data-render-services></div>
+      </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="section section-alt">
+      <div class="container">
+        <h2>Meet Your Dentist</h2>
+        <div class="grid" data-render-doctors></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-inner">
+        <img src="images/placeholder.svg" alt="Our clinic">
+        <div>
+          <h2>About Us</h2>
+          <p>Om Dental Clinic is a family dental practice at Balkum Road, Thane West, led by Dr. Darshana Shetty (BDS, Mumbai). We believe good dentistry starts with honesty — we examine carefully, explain clearly, and recommend only what you actually need, never more.</p>
+          <p>From routine cleanings to root canals, extractions, implants and children's care, we focus on gentle, comfortable treatment in a calm, modern clinic — open seven days a week, so care fits around your life, not the other way round.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="section section-alt">
+      <div class="container">
+        <h2>What Patients Say</h2>
+        <div class="grid" data-render-testimonials></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <div class="contact-details">
+          <h2>Visit Us</h2>
+          <p class="contact-line">📍 <span data-bind="address">Balkum, Thane</span></p>
+          <p class="contact-line">📞 <a data-bind="phoneHref" href="#"><span data-bind="phone">+91 …</span></a></p>
+          <p class="contact-line">✉️ <a data-bind="emailHref" href="#"><span data-bind="email">email</span></a></p>
+          <div class="hours" data-render-hours></div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-bind="waHref" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+            <a class="btn btn-ghost" data-bind="directionsHref" href="#" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <iframe class="map" data-bind="mapsSrc" title="Clinic location on Google Maps" loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span data-bind="name">OM Dental Clinic</span> · Balkum, Thane · <a data-bind="phoneHref" href="#"><span data-bind="phone">+91 …</span></a></p>
+    </div>
+  </footer>
+
+  <a class="fab" data-bind="waHref" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.5.8 3.2 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.5c-1.5 0-3-.4-4.3-1.2l-.3-.2-4.3 1.3 1.4-4.2-.3-.4a9.4 9.4 0 0 1-1.5-5.1c0-5.2 4.3-9.5 9.6-9.5s9.6 4.3 9.6 9.5-4.3 9.8-9.9 9.8zm5.4-7.2c-.3-.1-1.7-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a7.7 7.7 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <script src="site.js"></script>
+</body>
+</html>
